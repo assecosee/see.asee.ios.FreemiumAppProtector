@@ -6,8 +6,8 @@
 
 App Protector Freemium SDK enables limited threat detection on iOS devices. Supported detections include:
 - Jailbreaking detection;
-- App Signature;
-- App Store verfication;
+- Code Signature;
+- Downloaded from trusted source verfication;
 
 Supported reactions to detected threats:
 - Notify the user.
@@ -28,7 +28,7 @@ When a security event is detected, App Protector notifies the application about 
 
 ### SDK integration Adding SDK to iOS project
 
-SDK can be downloaded from [here](link).
+SDK can be downloaded from [here](https://cybersecurity.asee.io/downloads/app-protector-datasheet/).
 
 SDK is delivered in a .zip format, where after unzipping, you will have an .xcframework file.
 
@@ -143,4 +143,4 @@ ASEE group is one of the biggest IT companies in the area of production and impl
 ASEE provides products and services within the Payment business under Payten name. Since October 2009, the shares of Asseco South Eastern Europe (WSE: ASSECO SEE, ASE) have been listed on the Warsaw Stock Exchange.
 
 # 📜 License
-Freemium App Protector SDK is provided under a freemium model. Review the [LICENSE](your_license_file_url) for detailed information.
+Freemium App Protector SDK is provided under a freemium model. Review the [LICENSE](https://github.com/assecosee/see.asee.ios.FreemiumAppProtector/blob/4a6a6e1b30fb04905dcd8c892251bc64280b3a3a/LICENSE) for detailed information.
