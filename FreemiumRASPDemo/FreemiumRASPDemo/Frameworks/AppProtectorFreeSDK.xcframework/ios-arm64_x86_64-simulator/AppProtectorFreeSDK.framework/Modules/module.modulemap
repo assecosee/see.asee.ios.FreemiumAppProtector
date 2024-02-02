@@ -1,0 +1,11 @@
+framework module AppProtectorFreeSDK {
+  umbrella header "AppProtectorFreeSDK.h"
+  export *
+
+  module * { export * }
+}
+
+module AppProtectorFreeSDK.Swift {
+  header "AppProtectorFreeSDK-Swift.h"
+  requires objc
+}

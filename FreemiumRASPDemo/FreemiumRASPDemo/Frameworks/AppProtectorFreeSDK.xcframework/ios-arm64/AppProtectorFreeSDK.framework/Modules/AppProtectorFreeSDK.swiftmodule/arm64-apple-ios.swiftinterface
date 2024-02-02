@@ -1,0 +1,38 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
+// swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name AppProtectorFreeSDK
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+@_exported import AppProtectorFreeSDK
+import CommonCrypto
+import Foundation
+import MachO
+import Swift
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public struct RaspConfig : Swift.OptionSet {
+  public let rawValue: Swift.Int
+  public init(rawValue: Swift.Int)
+  public static let None: AppProtectorFreeSDK.RaspConfig
+  public static let JailbreakNotifyUser: AppProtectorFreeSDK.RaspConfig
+  public static let IsOfficialCodeSignature: AppProtectorFreeSDK.RaspConfig
+  public static let IsFromTrustedSource: AppProtectorFreeSDK.RaspConfig
+  public static func notifyUserForAll() -> [AppProtectorFreeSDK.RaspConfig]
+  public typealias ArrayLiteralElement = AppProtectorFreeSDK.RaspConfig
+  public typealias Element = AppProtectorFreeSDK.RaspConfig
+  public typealias RawValue = Swift.Int
+}
+@_hasMissingDesignatedInitializers public class RaspFacade {
+  public static func doDetectOnDemand(raspConfiguration: [AppProtectorFreeSDK.RaspConfig]) -> [AppProtectorFreeSDK.DetectionTamperingType]
+  @objc deinit
+}
+public struct DetectionTamperingType : Swift.OptionSet {
+  public let rawValue: Swift.Int
+  public init(rawValue: Swift.Int)
+  public static let Jailbreak: AppProtectorFreeSDK.DetectionTamperingType
+  public static let UntrustedSource: AppProtectorFreeSDK.DetectionTamperingType
+  public static let UnofficalCodeSignature: AppProtectorFreeSDK.DetectionTamperingType
+  public typealias ArrayLiteralElement = AppProtectorFreeSDK.DetectionTamperingType
+  public typealias Element = AppProtectorFreeSDK.DetectionTamperingType
+  public typealias RawValue = Swift.Int
+}
