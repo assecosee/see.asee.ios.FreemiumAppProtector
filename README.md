@@ -12,6 +12,10 @@ App Protector Freemium SDK enables limited threat detection on iOS devices. Supp
 Supported reactions to detected threats:
 - Notify the user.
 
+## Youtube Tutorial
+
+[![Watch the video](https://img.youtube.com/vi/ee8xtZJS6c0/maxresdefault.jpg)](https://www.youtube.com/watch?v=ee8xtZJS6c0)
+
 ## Security Detections
 
 ### 🚧 Jailbreak Detection
